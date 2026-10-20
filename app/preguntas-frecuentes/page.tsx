@@ -1,0 +1,15 @@
+import PublicInformation, { informationMetadata } from "../public-information";
+export const metadata = informationMetadata("Preguntas frecuentes sobre MEDYNA y AZTRA", "Qué es MEDYNA, quién es Emanuel Medina, qué es AZTRA y cómo presentar una propuesta o contactar con el grupo.", "/preguntas-frecuentes");
+const questions = [
+ { question: "¿Qué es MEDYNA?", answer: <>MEDYNA es un grupo privado dedicado al desarrollo de empresas, conocimiento y proyectos con criterio independiente y horizonte de largo plazo. Consulta la <a href="/medyna">presentación del grupo</a>.</> },
+ { question: "¿Quién es Emanuel Medina?", answer: <>Emanuel Medina es CEO de MEDYNA. Puedes conocer su presentación en la <a href="/medina">página personal de Emanuel Medina</a>.</> },
+ { question: "¿Qué es AZTRA?", answer: <>AZTRA es una iniciativa de MEDYNA de investigación y orientación estratégica para objetivos de expansión empresarial, nuevos proyectos y colaboraciones. Su <a href="/aztra">convocatoria inicial</a> está abierta y el servicio se encuentra en preparación.</> },
+ { question: "¿GAVVEL y AZTRA son el mismo proyecto?", answer: <>Sí. AZTRA es el nombre actual de la iniciativa anteriormente presentada como GAVVEL. La dirección anterior sigue disponible para conservar los enlaces compartidos; la página principal del proyecto es <a href="/aztra">xmedyna.com/aztra</a>.</> },
+ { question: "¿Cómo presento un objetivo a AZTRA?", answer: <>En el <a href="/aztra#presentar">formulario de AZTRA</a>, selecciona el tema, explica tu objetivo e indica tu nombre y un correo o teléfono. El contexto adicional es opcional. La <a href="/guias/presentar-propuesta">guía de presentación</a> te ayuda a preparar una descripción concreta.</> },
+ { question: "¿Enviar una propuesta significa que ya fui aceptado?", answer: <>No. El folio confirma la recepción de la propuesta. No confirma selección, contratación ni un plazo de respuesta. El alcance y las condiciones deben acordarse antes de iniciar cualquier trabajo.</> },
+ { question: "¿Debo enviar documentos confidenciales?", answer: <>No son necesarios para la presentación inicial. Explica lo esencial sin incluir credenciales ni documentos confidenciales. Consulta <a href="/privacidad">Privacidad y avisos</a> para conocer la información publicada sobre el tratamiento de datos.</> },
+ { question: "¿Dónde veo los proyectos y cómo contacto con MEDYNA?", answer: <>Los accesos públicos están en <a href="/proyectos">Proyectos</a> y <a href="/archivo">Archivo</a>. Para una consulta, idea o colaboración general, utiliza el <a href="/contact">contacto institucional</a>.</> },
+];
+export default function QuestionsPage() {
+ return <PublicInformation path="/preguntas-frecuentes" title="Preguntas frecuentes" lead="Respuestas directas para conocer MEDYNA, entender AZTRA y elegir dónde presentar tu propuesta."><div className="information-faq">{questions.map(item => <section key={item.question}><h2>{item.question}</h2><p>{item.answer}</p></section>)}</div></PublicInformation>;
+}

@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1788819180066,
+      "tag": "0000_clean_the_santerians",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1788855460158,
+      "tag": "0001_smart_runaways",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1788856518548,
+      "tag": "0002_closed_jamie_braddock",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1790415471961,
+      "tag": "0003_organic_alex_wilder",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1790421586208,
+      "tag": "0004_gorgeous_grim_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791249080356,
+      "tag": "0005_quiet_post",
+      "breakpoints": true
+    }
+  ]
+}
